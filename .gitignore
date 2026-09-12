@@ -1,0 +1,17 @@
+# Databases (generated at runtime / by setup script — never commit real or seed data)
+*.db
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# Editor config
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
