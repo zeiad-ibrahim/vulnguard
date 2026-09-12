@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulnGuard - Targeted System Scan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/targeted.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="VulnGuard Logo" class="logo">
+        <h1 class="brand-name">Targeted System Scan</h1>
+        <a href="{{ url_for('mainpage') }}" class="back-btn">Back to Dashboard</a>
+    </nav>
+
+    <main>
+        <h2>Start Targeted System Scan</h2>
+        <div class="scan-input">
+            <label for="ipAddress">Enter IP Address:</label>
+            <input type="text" id="ipAddress" placeholder="e.g., 192.168.1.1" >
+        </div>
+
+        <div class="scan-input">
+            <label for="ports">Enter Ports:</label>
+            <input type="text" id="ports" placeholder="e.g., 22, 80, 443" >
+        </div>
+
+        <button id="startTargetedScan" class="scan-btn">Start Targeted Scan</button>
+        <div id="scanStatus" class="status"></div>
+        <div id="scanResults" class="status"></div>
+    </main>
+
+    <script src="{{ url_for('static', filename='scripts/targeted.js') }}"></script>
+</body>
+</html>

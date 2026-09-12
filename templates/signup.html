@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulnGuard - Sign Up</title>
+    <!-- Link to the CSS file using Flask's url_for -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/signup.css') }}">
+</head>
+<body>
+    <div class="signup">
+        <div class="signupbox">
+            <!-- Add a logo for the app, using url_for to locate it in static/ -->
+            <img src="{{ url_for('static', filename='logo.jpg') }}" alt="VulnGuard Logo" class="logo">
+            <!-- Title for the sign-up page -->
+            <h1 class="title1">Create an Account</h1>
+            <form id="signupForm">
+                <!-- Email field instead of username -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="e.g., user@xyno.com" >
+
+                <!-- Password field -->
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" placeholder="Enter password" >
+
+                <!-- Confirm password field -->
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" placeholder="Re-enter password" >
+
+                <!-- Button to submit the form -->
+                <button type="submit" class="signupbutton">Sign Up</button>
+                <!-- Link to the login page inside templates -->
+                <p class="linklogin">Already have an account? <a href="{{ url_for('login') }}">Log in here</a></p>
+            </form>
+            <!-- Add a message element to display errors or success -->
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file using url_for -->
+    <script src="{{ url_for('static', filename='scripts/signup.js') }}"></script>
+</body>
+</html>

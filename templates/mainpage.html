@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulnGuard - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/mainpage.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="navbar">
+            <img src="{{ url_for('static', filename='logo.jpg') }}" alt="VulnGuard Logo" class="logo">
+            <h1 class="brand-name">VulnGuard Dashboard</h1>
+            <ul>
+                <!--<li><a href="mainpage.html">Home</a></li>
+                <li><a href="fullscan.html">Full System Scan</a></li>
+                <li><a href="targeted.html">Targeted System Scan</a></li>
+                <li><a href="scan-history.html">Scan History</a></li>-->
+                <li><a href="{{ url_for('settings') }}">Settings</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Welcome to the VulnGuard Dashboard</h2>
+            <div class="card-container">
+                <div class="card" onclick="window.location.href='{{ url_for('fullscan') }}'">
+                    <h3>Full System Scan</h3>
+                    <p>Scan your entire system for vulnerabilities.</p>
+                </div>
+                <div class="card" onclick="window.location.href='{{ url_for('targetedscan') }}'">
+                    <h3>Targeted System Scan</h3>
+                    <p>Perform a specific scan on selected areas.</p>
+                </div>
+                <div class="card" onclick="window.location.href='{{ url_for('history') }}'">
+                    <h3>Scan History</h3>
+                    <p>View previous scan results and reports.</p>
+                </div>
+                <div class="card" onclick="window.location.href='{{ url_for('settings') }}'">
+                    <h3>Settings</h3>
+                    <p>Configure your application preferences.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script/mainpage.js') }}"></script>
+</body>
+</html>
+
+<!--Linking Pages Together
+Make sure all HTML files are in the same directory (vulnguard) or use proper paths. The <a href="page.html"> and onclick="navigateTo('page.html')" are used for internal navigation.-->

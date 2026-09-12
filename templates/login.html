@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulnGuard - Login</title> <!-- Sets the title of the login page -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}"> <!-- Links the login CSS file -->
+</head>
+<body>
+    <div class="login-container"> <!-- Creates a container to center the login box -->
+        <div class="login-box"> <!-- Creates a box for the login form -->
+            <img src="{{ url_for('static', filename='logo.jpg') }}" alt="VulnGuard Logo" class="logo"> <!-- Displays the logo -->
+            <h1 class="brand-name">Log In</h1> <!-- Shows the "Log In" title -->
+            <form id="loginForm"> <!-- Starts a form for submitting login details -->
+                <label for="email">Email:</label> <!-- Label for the email input -->
+                <input type="email" id="email" placeholder="e.g., user@xyno.com" > <!-- Email input field -->
+                <label for="password">Password:</label> <!-- Label for the password input -->
+                <input type="password" id="password" placeholder="Enter password" > <!-- Password input field -->
+                <button type="submit" class="login-btn">Log In</button> <!-- Button to submit the form -->
+                <p class="signup-link">Don't have an account? <a href="{{ url_for('dashboard') }}">Sign up here</a></p> <!-- Link to sign-up page -->
+            </form>
+            <p id="message"></p> <!-- Element to show error or success messages -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/login.js') }}"></script> <!-- Links the login JavaScript file -->
+</body>
+</html>

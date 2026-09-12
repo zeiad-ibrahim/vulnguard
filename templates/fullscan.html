@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulnGuard - Full System Scan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/fullscan.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="VulnGuard Logo" class="logo">
+        <h1 class="brand-name">Full System Scan</h1>
+        <a href="{{ url_for('mainpage') }}" class="back-btn">Back to Dashboard</a>
+    </nav>
+
+    <main>
+        <h2>Start Full System Scan</h2>
+        <form id="fullScanForm" class="scan-input">
+            <div class="input-container">
+                <label for="ipAddress">Enter IP Address:</label>
+                <input type="text" id="ipAddress" placeholder="e.g., 192.168.1.1" >
+            </div>
+            <button type="submit" id="startScan" class="scan-btn">Start Scan</button>
+            <div id="scanStatus" class="status"></div>
+        </form>
+        <div id="scanResults" class="status"></div>
+    </main>
+
+    <script src="{{ url_for('static', filename='scripts/fullscan.js') }}"></script>
+</body>
+</html>

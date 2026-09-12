@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulnGuard - Settings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/settings.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="VulnGuard Logo" class="logo">
+        <h1 class="brand-name">Settings</h1>
+        <a href="{{ url_for('mainpage') }}" class="back-btn">Back to Dashboard</a>
+    </nav>
+
+    <main>
+        <h2>Notification Settings</h2>
+        <div class="settings-container">
+            <label for="notifications-toggle" class="toggle-label">
+                Enable Notifications:
+                <input type="checkbox" id="notifications-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='styles/settings.js') }}"></script>
+</body>
+</html>
