@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the page */
+    background-color: #e6f0fa; /* Sets background color to light blue */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+.login-container {
+    display: flex; /* Uses flexbox to center content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Makes the container full height of the viewport */
+}
+
+.login-box {
+    background-color: white; /* Sets the box background to white */
+    padding: 20px 40px; /* Adds padding inside the box */
+    border-radius: 10px; /* Rounds the corners of the box */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    text-align: center; /* Centers text inside the box */
+}
+
+.logo {
+    width: 80px; /* Sets the logo width */
+    margin-bottom: 10px; /* Adds margin below the logo */
+}
+
+.brand-name {
+    margin-top: 0; /* Removes top margin */
+    color: #333; /* Sets the title color to dark gray */
+}
+
+label {
+    display: block; /* Makes labels take full width */
+    margin: 10px 0 5px; /* Adds margin around labels */
+    text-align: left; /* Aligns label text to the left */
+    color: #555; /* Sets label color to medium gray */
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%; /* Makes input fields full width */
+    padding: 8px; /* Adds padding inside input fields */
+    border: 1px solid #ddd; /* Adds a light gray border */
+    border-radius: 5px; /* Rounds the corners of input fields */
+    margin-bottom: 15px; /* Adds margin below input fields */
+}
+
+.login-btn {
+    background-color: #4285f4; /* Sets button background to blue */
+    color: white; /* Sets button text to white */
+    border: none; /* Removes default border */
+    padding: 10px; /* Adds padding inside the button */
+    width: 100%; /* Makes button full width */
+    border-radius: 5px; /* Rounds the button corners */
+    cursor: pointer; /* Shows a pointer cursor on hover */
+    font-size: 16px; /* Sets font size to 16 pixels */
+    margin-top: 10px; /* Adds margin above the button */
+}
+
+.login-btn:hover {
+    background-color: #357ae8; /* Changes button color to darker blue on hover */
+}
+
+.signup-link {
+    margin-top: 10px; /* Adds margin above the sign-up link */
+    font-size: 14px; /* Sets font size to 14 pixels */
+}
+
+.signup-link a {
+    color: #4285f4; /* Sets link color to blue */
+    text-decoration: none; /* Removes default underline */
+}
+
+#message.error {
+    color: red; /* Sets error messages to red */
+}
+
+#message.success {
+    color: green; /* Sets success messages to green */
+}

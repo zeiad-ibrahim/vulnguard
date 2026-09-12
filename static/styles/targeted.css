@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    height: 40px;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 24px;
+}
+
+.back-btn {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #0056b3;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #004494;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.scan-input {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.scan-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scan-btn:hover {
+    background-color: #218838;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}

@@ -1,0 +1,83 @@
+body { /* to style the entire body of the page */
+    font-family: Arial, sans-serif;
+    background-color: #e6f0fa;
+    margin: 0;
+    padding: 0;
+}
+
+.signup { /* to style the box that centers the signup box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signupbox { /* to style the box containing the sign-up form */
+    background-color: white; 
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo { /* to style the logo image */
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.title1 { /* to style the "Create an Account" title */
+    margin-top: 0;
+    color: #333;
+}
+
+label { /* to style all label elements in the form */
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #555;
+}
+
+input[type="text"], input[type="password"], input[type="email"] { /* to style password and email input fields */
+    width: 100%; 
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.signupbutton { /* to style the "Sign Up" button */
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.signupbutton:hover { /* to style the button when the user hovers over it */
+    background-color: #357ae8;
+}
+
+.linklogin { /* to style the "Already have an account?" text */
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.linklogin a { /* to style the "Log in here" link inside the login-link paragraph */
+    color: #4285f4;
+    text-decoration: none;
+}
+
+/* Added styles for displaying error and success messages: */
+#message.error { /* to style displaying error messages in red */
+    color: red;
+}
+
+#message.success { /* to style displaying succes messages in green */
+    color: green;
+}
+
+
